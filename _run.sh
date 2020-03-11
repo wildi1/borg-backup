@@ -28,6 +28,7 @@ BORG_PASSPHRASE="XXXX"
 
 # Set Prune Strategy how to keep
 PRUNE_KEEP="          \
+    --keep-last 10    \
     --keep-hourly 4   \
     --keep-daily 7    \
     --keep-weekly 4"
