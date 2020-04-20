@@ -5,8 +5,8 @@
 # ssh-copy-id [BACKUPUSER]@[BACKUPHOST]
 # borg init --encryption=repokey-blake2 /PATH_TO_BACKUP_REPOSITORY
 
-# Execute Command for Cron with Log
-# ./borg-backup.sh &> /dev/null 2>&1
+# Execute Command for Cron with Log (Every night at 3 AM)
+# 0 3 * * * user /path/to/borg-backup.sh &> /dev/null 2>&1
 
 # Name of the Script
 SCRIPT_NAME="XYZ-Backup"
